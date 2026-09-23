@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klaim Diskon & Bonus Motor Bekas Bandung</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 font-sans min-h-screen flex flex-col items-center justify-between p-4">
+
+    <div class="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 my-auto">
+        <!-- Header Banner -->
+        <div class="bg-gradient-to-r from-red-600 to-rose-700 p-6 text-white text-center">
+            <span class="bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Promo Khusus Hari Ini</span>
+            <h1 class="text-2xl font-black mt-3">POTONGAN HARGA Rp 250.000</h1>
+            <p class="text-red-100 text-sm mt-1">Tanpa Negosiasi untuk Pemilihan Semua Unit Motor Bekas di Bandung!</p>
+        </div>
+
+        <!-- Bonus Spesial Section -->
+        <div class="bg-amber-50 border-b border-amber-100 p-4">
+            <p class="text-center text-xs font-bold text-amber-800 uppercase tracking-wider mb-3">🎁 Bonus Spesial Langsung Bawa Pulang:</p>
+            <div class="grid grid-cols-2 gap-3 text-center">
+                <div class="bg-white p-2.5 rounded-xl border border-amber-200 shadow-sm">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmwLg1CVxc0KdW5ltGcwWrgQYrv0oNblBDq1tZ1_Pvw&s=10" alt="Helm Eksklusif" class="w-20 h-20 object-cover mx-auto rounded-lg mb-1.5">
+                    <span class="text-xs font-bold text-slate-700 block">Helm Eksklusif</span>
+                </div>
+                <div class="bg-white p-2.5 rounded-xl border border-amber-200 shadow-sm">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmq26cAq-BeKldGEEFREVE7doFCfcOVWwLmiT47xAaaw&s" alt="Oli Federal" class="w-20 h-20 object-cover mx-auto rounded-lg mb-1.5">
+                    <span class="text-xs font-bold text-slate-700 block">Oli Federal</span>
+                </div>
+            </div>
+            <p class="text-[11px] text-center text-amber-900 mt-2 italic">*Syarat & Ketentuan: Cukup isi data diri di bawah ini!</p>
+        </div>
+
+        <!-- Form Body -->
+        <form id="formPembeli" class="p-6 space-y-4">
+            <div>
+                <label class="block text-xs font-semibold text-slate-600 mb-1 uppercase tracking-wider">Nama Lengkap</label>
+                <input type="text" id="nama" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-sm" placeholder="Masukkan nama lengkap Anda">
+            </div>
+
+            <div>
+                <label class="block text-xs font-semibold text-slate-600 mb-1 uppercase tracking-wider">No. WhatsApp Aktif</label>
+                <input type="tel" id="no_wa" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-sm" placeholder="Contoh: 081234567890">
+            </div>
+
+            <div>
+                <label class="block text-xs font-semibold text-slate-600 mb-1 uppercase tracking-wider">Domisili</label>
+                <input type="text" id="domisili" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-sm" placeholder="Contoh: Cimahi / Bandung Kota">
+            </div>
+
+            <div>
+                <label class="block text-xs font-semibold text-slate-600 mb-1 uppercase tracking-wider">Alamat Email</label>
+                <input type="email" id="email" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-sm" placeholder="email@domain.com">
+            </div>
+
+            <!-- Rencana Survey Unit -->
+            <div class="border-t border-slate-100 pt-4 mt-2">
+                <label class="block text-xs font-bold text-red-600 mb-2 uppercase tracking-wider">Rencana Survey Unit</label>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <input type="text" id="merk_motor" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-sm" placeholder="Merk Motor (Cth: Beat/NMax)">
+                    </div>
+                    <div>
+                        <input type="text" id="tahun_motor" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-sm" placeholder="Tahun (Cth: 2022)">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="btnSubmit" class="w-full mt-2 bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl transition shadow-lg shadow-red-600/30 text-sm uppercase tracking-wider cursor-pointer">
+                Klaim Diskon & Bonus Sekarang
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-md text-center py-4 text-xs text-slate-500 space-y-1">
+        <p>
+            <a href="https://dealermobillistrik.com/kategori/22/motor-bekas-bandung" target="_blank" class="text-red-600 font-semibold hover:underline">www.motorbandung.com</a>
+        </p>
+        <p>WhatsApp: 
+            <a href="https://wa.me/6285222952220" target="_blank" class="hover:text-slate-700 font-medium">085222952220</a> / 
+            <a href="https://wa.me/6285888155541" target="_blank" class="hover:text-slate-700 font-medium">085888155541</a>
+        </p>
+    </footer>
+
+    <!-- Script Koneksi ke GAS -->
+    <script>
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwFF4gxg6i9tNeA5P85_l4zM5Ww1vuXwEXqD3m3q1s66VZyewG9OcHtHfulfaiH1FjODw/exec";
+
+        document.getElementById('formPembeli').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('btnSubmit');
+            btn.disabled = true;
+            btn.innerText = "Mengirim Data...";
+
+            const payload = {
+                action: "tambah",
+                nama: document.getElementById('nama').value,
+                no_wa: document.getElementById('no_wa').value,
+                domisili: document.getElementById('domisili').value,
+                email: document.getElementById('email').value,
+                merk_motor: document.getElementById('merk_motor').value,
+                tahun_motor: document.getElementById('tahun_motor').value
+            };
+
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            }).then(() => {
+                alert("Berhasil! Data Anda sudah tercatat. Tim marketing kami akan segera menghubungi via WhatsApp untuk proses pengambilan diskon dan bonus.");
+                document.getElementById('formPembeli').reset();
+                btn.disabled = false;
+                btn.innerText = "Klaim Diskon & Bonus Sekarang";
+            }).catch(err => {
+                alert("Terjadi kesalahan, silakan coba lagi.");
+                console.error(err);
+                btn.disabled = false;
+                btn.innerText = "Klaim Diskon & Bonus Sekarang";
+            });
+        });
+    </script>
+</body>
+</html>
